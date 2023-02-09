@@ -1,3 +1,5 @@
+## Script Usage
+
 To create a new entity class called "Car", for example, you can run:
 
 ```shell
@@ -80,6 +82,7 @@ class TestCar(TestCase):
     self.assertIsInstance(car, Car)
 ```
 
+### Uppercase Flag
 
 if you want the entity to be all in uppercase, you can pass the `-U` flag. Here's a simple example:
 
