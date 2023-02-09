@@ -74,12 +74,12 @@ class TestCar(TestCase):
     """
     
     def test_should_create_new_instance_of_car(self) -> None:
-    """
-    Method to assert that a new car instance was successfully created along with the needed parameters.
-    """
-    car = Car()
+        """
+        Method to assert that a new car instance was successfully created along with the needed parameters.
+        """
+        car = Car()
 
-    self.assertIsInstance(car, Car)
+        self.assertIsInstance(car, Car)
 ```
 
 ### Uppercase Flag
