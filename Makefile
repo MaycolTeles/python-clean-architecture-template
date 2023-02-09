@@ -1,5 +1,5 @@
 start:
-	./scripts/create_project.sh
+	./scripts/start_project.sh
 
 format:
 	black app/
