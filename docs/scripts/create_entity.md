@@ -73,9 +73,9 @@ class TestCar(TestCase):
     Class containing all unit tests to assert the expected behaviours from the Car Entity.
     """
     
-    def test_should_create_new_car(self) -> None:
+    def test_should_create_new_instance_of_car(self) -> None:
     """
-    Method to assert that a car was successfully created along with the needed parameters.
+    Method to assert that a new car instance was successfully created along with the needed parameters.
     """
     car = Car()
 
