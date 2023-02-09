@@ -1,42 +1,28 @@
 # Python Template
-Template for Python projects.
+Template for Python projects written using the Clean Architecture approach.
 
-This template should be used like so:
+For more information about the template, please reach [here](https://github.com/MaycolTeles/python-project-template/blob/main/README.md)
 
-1. First, click the "Use this template" button and then "Create a new repository";
-2. Now, clone this repository locally in your machine;
-3. Add all the libraries/packages you want in your project to `packages.txt` inside the `/scripts` folder, but <b>don't remove the ones that are already there</b>;
-4. Finally, run the `start_project.sh` script located inside `/scripts` folder as well. You can run the script in Unix systems like so:
+This clean architecture template contains some extra scripts to automate the creation of `Entities` and `Use-Cases`, along with their test files.
+It creates only the templates and standard code, but the implementation must be done by you.
 
-```shell
-./scripts/start_project
+### Creating a new entity:
+
+You can run
+
+```Makefile
+$ make entity Car
 ```
 
-Alternatively, you can run:
+and a Car entity will be created. To see exactly how the files will look like, please refer to [these docs](https://github.com/MaycolTeles/python-clean-architecture-template/blob/main/docs/scripts/create_entity.md)
 
-```shell
-make start
+
+### Creating a new use-case:
+
+You can run
+
+```Makefile
+$ make use-case CreateCar
 ```
 
-and it will work the same;
-
-5. Start coding! You now have a whole environment set with the following features:
-
-### Makefile
-
-A Makefile containing some useful commands, like:
-* start (run the `./scripts/start_project.sh` script to start the project)
-* run (run the application by executing `app/run.py` file`);
-* test (run all the tests using pytest and generates a html containing the code coverage);
-* lint (run flake8 and then pylint on your code);
-* format (run black on your code);
-* clean (run Unix commands to remove `.pyc` files, `__pycache__` folders and .coverage related files);
-
-To run a Makefile command, you can just type `make <command>` from your root folder like so:
-```shell
-~/your_project_name$ make start
-```
-
-### Configuration Files
-
-This template provides to you some right-away configurations for the `pylint`, `flake8`, `coverage` and `pre-commit´ libraries
+and a CreateCarUseCase use-case will be created. To see exactly how the files will look like, please refer to [these docs](https://github.com/MaycolTeles/python-clean-architecture-template/blob/main/docs/scripts/create_use_case.md)
