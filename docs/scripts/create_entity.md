@@ -3,13 +3,13 @@
 To create a new entity class called "Car", for example, you can run:
 
 ```shell
-./scripts/create_entity car
+./scripts/create_entity Car
 ```
 
 or using the Makefile:
 
 ```Makefile
-make entity car
+make entity Car
 ```
 
 and the following files will be generated:
