@@ -12,7 +12,7 @@ tests: lint
 	python3.10 -m pytest -vv --cov=. --cov-report=html --cov-config=.coveragerc
 
 run:
-	python3.10 app/run.py
+	python3.10 app/main.py
 
 ## remove build artifacts
 clean-build:
@@ -37,3 +37,6 @@ clean-test:
 
 ## remove all build, test, coverage and Python artifacts
 clean: clean-build clean-pyc clean-test
+
+entity:
+	./scripts/create_entity.sh $(NAME) $(FLAG)
