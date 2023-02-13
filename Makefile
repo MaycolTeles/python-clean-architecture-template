@@ -40,3 +40,6 @@ clean: clean-build clean-pyc clean-test
 
 entity:
 	./scripts/create_entity.sh $(NAME) $(FLAG)
+
+use-case:
+	./scripts/create_use_case.sh $(NAME)
